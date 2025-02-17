@@ -7,7 +7,7 @@
 
   html {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
   }
   /* Body and Typography */
   body {
@@ -19,6 +19,45 @@
     margin: 0;
     height: 100%;
     background-image: linear-gradient(#aaaaaa,#000000);
+  }
+
+  .main-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .offer-grid{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .offer-card{
+    margin-right: 10vh;
+    display: flex;
+    background-color: #aaaaaa;
+    padding: 3vh;
+    border-radius: 10px;
+  }
+
+  .offer-card img{
+    width: 20vh;
+    height: 20vh;
+    margin-right: 2vh;
+  }
+
+  .offer-text div{
+    background-color: red;
+    align-self: flex-end;
+  }
+
+  .menu-item {
+    justify-content: center;
+    text-align: center; 
+  }
+
+  .menu-item p{
+    margin-bottom: 3vh;
   }
   
   /* Headings */
@@ -111,6 +150,7 @@
   /* Main Content Area */
   main {
     padding: 20px 0;
+    min-height: 100vh
   }
   
   .banner {
@@ -126,15 +166,23 @@
     padding: 20px;
     border-radius: 10px;
   }
-  
+
+  .map {
+  }
+
+  .map iframe{
+    width:100%; 
+  }
+
+  video {
+    width: 600px;
+    height: 400px;
+  }
+
   /* Footer Styles */
   footer {
     color: #eeeeee;
     text-align: center;
     padding: 10px 0;
-    bottom: 0;
     width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
   }
