@@ -340,10 +340,6 @@ nav a:hover {
     width: 40vw; /* Make the image more responsive */
     height: auto; /* Adjust height according to aspect ratio */
   }
-  video {
-    width: 100px;
-    height: 50px;
-  }
 }
 
 @media print {
