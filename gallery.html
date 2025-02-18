@@ -12,8 +12,8 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="vallastadenpizzeria_logo.png"/>
       <nav>
+        <img class="logo" src="vallastadenpizzeria_logo.png" alt="logo"/>
         <a href="index.html">
           Hem
         </a>
@@ -38,15 +38,48 @@
       <div class="banner">
         <h1>Galleri</h1>
         <h2>
-          Video på pizzor.
+          Video på pizzor
         </h2>
       </div>
       <div class="main-content">
         <video controls>
           <source src="video_pizza.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+          Your browser does not support the video tag.
         </video>
-      </div>
+        <div class="form-area">
+          <h2>
+            Kontakta oss gärna via mail om du har mediamaterial som skulle kunna bidra till vårt galleri
+          </h2>
+          <form action="mailto:autofyll@gmail.com" method="post" enctype="text/plain">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Enter first name..."><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Enter last name..."><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" value="Enter subject..."><br>
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message" value="Enter message..."><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="Enter your email..."><br>
+            <input type="submit" value="Submit">
+          </form> 
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Video namn</th>
+              <th>Pizza</th>
+              <th>Insändare</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pizza zideo 1</td>
+              <td>Margarita</td>
+              <td>Pål johnson</td>
+            </tr>
+          </tbody>
+        </table>
     </main>
     <footer>
       <address>

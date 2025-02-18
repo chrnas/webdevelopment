@@ -15,7 +15,6 @@
     font-family: Georgia, Verdana, serif;
     line-height: 1.6;
     color: #eeeeee; /* Light text for readability */
-    padding: 0 500px 0 500px;
     margin: 0;
     height: 100%;
     background-image: linear-gradient(#aaaaaa,#000000);
@@ -35,9 +34,15 @@
   .offer-card{
     margin-right: 10vh;
     display: flex;
-    background-color: #aaaaaa;
+    background-color: #808080;
     padding: 3vh;
     border-radius: 10px;
+    box-shadow: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .offer-card:hover{
+    transform: scale(1.05);
   }
 
   .offer-card img{
@@ -47,17 +52,32 @@
   }
 
   .offer-text div{
-    background-color: red;
+    background-color: rgba(187, 4, 4, 0.616);
     align-self: flex-end;
+    border-radius: 5px;
   }
 
-  .menu-item {
+  ul{
+    list-style: none;
+  }
+
+  li {
     justify-content: center;
     text-align: center; 
+    margin: 5vh;
   }
 
-  .menu-item p{
-    margin-bottom: 3vh;
+  table {
+    width: 100%; /* Gör tabellen full bredd */
+    border-collapse: collapse; /* Tar bort mellanrum mellan cellerna */
+  }
+  th, td {
+    border: 1px solid black; /* Lägger till en enkel kant runt cellerna */
+    padding: 8px; /* Lägger till lite inre avstånd */
+    text-align: left; /* Texten är vänsterjusterad */
+  }
+  th {
+    background-color: #918f8f; /* Ger header-cellerna en ljusgrå bakgrund */
   }
   
   /* Headings */
@@ -83,69 +103,101 @@
   }
   
   button {
-    color: #eeeeee;
+    justify-content: center;
+    margin: 10px;
+    width: 15vh;
+    min-width: 10vh; 
+    padding: 10px;
+    background: #b1b1b1;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: background 0.3s;
   }
   
   button:hover {
     color: #eeeeee; /* Change text color on hover */
-    text-shadow: 0 0 3px #fcfeff; /* Glow effect */
-  }
-  
-  /* Header Styles */
-  header {
-    padding: 20px 0;
-    text-align: center;
-    display: flex;
-    align-items: center; /* Ensures vertical alignment */
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
+    background: #444;
   }
 
-  header img {
-    width: 16vh;
-    height: 10vh;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+  input {
     width: 100%;
-    text-align: center;
-  }
-
-  nav ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-  }
-
-  nav ul li {
-      margin: 0 15px; /* Space between items */
-  }
-
-  nav a {
-    background-color: transparent;
+    padding: 10px;
+    background: #b1b1b1;
+    color: white;
     border: none;
-    padding: 10px 10px;
-    font-weight: bold;
-    font-size: 1.5rem;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #eeeeee;
+    transition: background 0.3s;
+    min-width: 20vh; 
+    max-width: 80vh;
   }
 
-  nav a:hover {
-    color: #eeeeee; /* Change text color on hover */
-    text-shadow: 0 0 3px #fcfeff; /* Glow effect */
-  }
+  /* Header Styles */
+header {
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: center; /* Centers header content */
+  flex-wrap: wrap; /* Allows wrapping when necessary */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-right: 20px; /* Adds some space between title and logo */
+}
+
+header img {
+  width: 16vh;
+  height: 10vh;
+  object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
+/* General nav styling */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Align items horizontally */
+  gap: 15px; /* Space between items */
+}
+
+nav ul li {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+nav a {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #eeeeee;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #fcfeff;
+  text-shadow: 0 0 3px #fcfeff;
+}
   
   /* Main Content Area */
   main {
@@ -175,8 +227,12 @@
   }
 
   video {
-    width: 600px;
-    height: 400px;
+    width: 60vh;
+    height: 40vh;
+  }
+
+  .form-area{
+    margin-top: 30px;
   }
 
   /* Footer Styles */
@@ -186,3 +242,133 @@
     padding: 10px 0;
     width: 100%;
   }
+
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  form label {
+      display: block;
+      font-weight: bold;
+      color: #eeeeee;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+      margin-bottom: 20px;
+      width: 100%;
+      background: #b1b1b1;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #b1b1b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  form input[type="submit"]:hover {
+      background: #444;
+  }
+
+
+  /* Media Query for smaller screens */
+@media (max-width: 768px) {
+  /* Stack header content vertically */
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-right: 0; /* Remove space for mobile */
+    margin-bottom: 10px; /* Add space between title and logo */
+  }
+
+  nav {
+    height: auto; /* Allow the nav to expand vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 0; /* Add padding for spacing */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the list items vertically */
+    align-items: center; /* Center the items horizontally */
+    width: 100%; /* Take up full width */
+  }
+
+  nav ul li {
+    margin-bottom: 10px; /* Add space between items vertically */
+    flex-grow: 0; /* Prevent items from growing too big */
+  }
+
+  nav a {
+    padding: 10px 20px; /* Increase padding for easier clicking */
+    font-size: 1.3rem; /* Slightly adjust font size for smaller screens */
+  }
+
+  .offer-grid {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center the cards horizontally */
+  }
+
+  .offer-card {
+    margin-right: 0; /* Remove the right margin on smaller screens */
+    margin-bottom: 20px; /* Add space between cards vertically */
+    max-width: 90%; /* Allow cards to take up more width */
+    flex-basis: 100%; /* Make each card take full width */
+  }
+
+  .offer-card img {
+    width: 40vw; /* Make the image more responsive */
+    height: auto; /* Adjust height according to aspect ratio */
+  }
+  video {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media print {
+  body {
+    font-family: Arial, sans-serif; /* För en ren och lättläst font */
+    font-size: 12pt; /* Anpassa fontstorlek för utskrift */
+    color: black; /* Gör texten svart för bättre läsbarhet */
+    background-color: white; /* Sätt bakgrund till vitt */
+  }
+
+  /* Ta bort oönskade element */
+  header, nav {
+    display: none;
+  }
+
+  /* Anpassa bilder så att de inte är för stora för utskriften */
+  img {
+    max-width: 100%;
+    height: auto;
+    page-break-inside: avoid;
+  }
+
+  /* För att sätta rubriker i en tydlig stil */
+  h1, h2, h3 {
+    font-weight: bold;
+    color: black;
+  }
+}
