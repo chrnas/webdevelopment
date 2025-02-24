@@ -98,7 +98,7 @@
   h3 {
     font-size: 1rem;
     font-weight: bold;
-    color: #eeeeee;
+    color: #eeeeee; /* Slightly darker gray */
     margin-bottom: 0.6rem;
   }
   
@@ -282,6 +282,7 @@ nav a:hover {
       background: #444;
   }
 
+
   /* Media Query for smaller screens */
 @media (max-width: 768px) {
   /* Stack header content vertically */
@@ -324,7 +325,10 @@ nav a:hover {
   }
 
   .offer-card {
+    margin-right: 0; /* Remove the right margin on smaller screens */
     margin-bottom: 20px; /* Add space between cards vertically */
+    max-width: 90%; /* Allow cards to take up more width */
+    flex-basis: 100%; /* Make each card take full width */
   }
 
   .offer-card img {
