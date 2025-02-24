@@ -224,8 +224,9 @@ nav a:hover {
   }
 
   video {
-    width: 60vh;
-    height: 40vh;
+    width: 90vw; /* Set width dynamically */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    max-width: 600px; /* Prevents too much stretching */
   }
 
   .form-area{
@@ -334,6 +335,11 @@ nav a:hover {
   .offer-card img {
     width: 40vw; /* Make the image more responsive */
     height: auto; /* Adjust height according to aspect ratio */
+  }
+
+  video {
+    width: 90vw;
+    height: calc(90vw * 16 / 9); /* Switch to 9:16 for mobile */
   }
 }
 
