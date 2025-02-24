@@ -23,7 +23,6 @@
   header {
     padding: 20px 0;
     text-align: center;
-    display: flex;
     align-items: center; /* Ensures vertical alignment */
     justify-content: center; /* Centers header content */
     flex-wrap: wrap; /* Allows wrapping when necessary */
