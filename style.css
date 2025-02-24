@@ -68,37 +68,37 @@
   }
 
   table {
-    width: 100%; /* Gör tabellen full bredd */
-    border-collapse: collapse; /* Tar bort mellanrum mellan cellerna */
+    width: 100%;
+    border-collapse: collapse; /* Remove space beetween cells */
   }
   th, td {
-    border: 1px solid black; /* Lägger till en enkel kant runt cellerna */
-    padding: 8px; /* Lägger till lite inre avstånd */
-    text-align: left; /* Texten är vänsterjusterad */
+    border: 1px solid black; /* Add simple borders around cells */
+    padding: 8px; /* Add inner distance */
+    text-align: left;
   }
   th {
-    background-color: #918f8f; /* Ger header-cellerna en ljusgrå bakgrund */
+    background-color: #918f8f;
   }
   
   /* Headings */
   h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: #eeeeee; /* White */
+    color: #eeeeee;
     margin-bottom: 1rem;
   }
 
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #eeeeee; /* Light gray */
+    color: #eeeeee;
     margin-bottom: 0.8rem;
   }
 
   h3 {
     font-size: 1rem;
     font-weight: bold;
-    color: #eeeeee; /* Slightly darker gray */
+    color: #eeeeee;
     margin-bottom: 0.6rem;
   }
   
@@ -219,9 +219,6 @@ nav a:hover {
     border-radius: 10px;
   }
 
-  .map {
-  }
-
   .map iframe{
     width:100%; 
   }
@@ -235,14 +232,12 @@ nav a:hover {
     margin-top: 30px;
   }
 
-  /* Footer Styles */
   footer {
     color: #eeeeee;
     text-align: center;
     padding: 10px 0;
     width: 100%;
   }
-
 
   form {
     max-width: 400px;
@@ -287,7 +282,6 @@ nav a:hover {
       background: #444;
   }
 
-
   /* Media Query for smaller screens */
 @media (max-width: 768px) {
   /* Stack header content vertically */
@@ -330,10 +324,7 @@ nav a:hover {
   }
 
   .offer-card {
-    margin-right: 0; /* Remove the right margin on smaller screens */
     margin-bottom: 20px; /* Add space between cards vertically */
-    max-width: 90%; /* Allow cards to take up more width */
-    flex-basis: 100%; /* Make each card take full width */
   }
 
   .offer-card img {
@@ -344,25 +335,25 @@ nav a:hover {
 
 @media print {
   body {
-    font-family: Arial, sans-serif; /* För en ren och lättläst font */
-    font-size: 12pt; /* Anpassa fontstorlek för utskrift */
-    color: black; /* Gör texten svart för bättre läsbarhet */
-    background-color: white; /* Sätt bakgrund till vitt */
+    font-family: Arial, sans-serif; /* Change to great font for printing*/
+    font-size: 12pt;
+    color: black; /* Make text black for easily readable text on print */
+    background-color: white; /* Place background to white */
   }
 
-  /* Ta bort oönskade element */
+  /* TRemove unwanted elements */
   header, nav {
     display: none;
   }
 
-  /* Anpassa bilder så att de inte är för stora för utskriften */
+  /* Adjust picture size for printing */
   img {
     max-width: 100%;
     height: auto;
     page-break-inside: avoid;
   }
 
-  /* För att sätta rubriker i en tydlig stil */
+  /* Create headers in clear style for printing */
   h1, h2, h3 {
     font-weight: bold;
     color: black;
