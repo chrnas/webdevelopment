@@ -9,7 +9,7 @@
     margin: 0;
     min-height: 100%;
   }
-  /* Body and Typography */
+
   body {
     flex-direction: column;
     font-family: Georgia, Verdana, serif;
@@ -20,41 +20,74 @@
     background-image: linear-gradient(#aaaaaa,#000000);
   }
 
-  .main-content {
-    justify-content: center;
+  header {
+    padding: 20px 0;
     text-align: center;
-  }
-
-  .offer-grid{
-    display:flex;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .offer-card{
-    margin-right: 10vh;
     display: flex;
-    background-color: #808080;
-    padding: 3vh;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center; /* Centers header content */
+    flex-wrap: wrap; /* Allows wrapping when necessary */
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-right: 20px; /* Adds some space between title and logo */
+  }
+
+  header img {
+    width: 16vh;
+    height: 10vh;
+    object-fit: contain; /* Ensure the image maintains aspect ratio */
+  }
+  
+  .banner {
+    color: #eeeeee;
+    padding: 20px;
+    text-align: center;
     border-radius: 10px;
-    box-shadow: #333;
-    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
   }
 
-  .offer-card:hover{
-    transform: scale(1.05);
+  main {
+    padding: 20px 0;
+    min-height: 100vh
   }
 
-  .offer-card img{
-    width: 20vh;
-    height: 20vh;
-    margin-right: 2vh;
+  footer {
+    color: #eeeeee;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
   }
 
-  .offer-text div{
-    background-color: rgba(187, 4, 4, 0.616);
-    align-self: flex-end;
-    border-radius: 5px;
+  /* Headings */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eeeeee;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #eeeeee;
+    margin-bottom: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #eeeeee;
+    margin-bottom: 0.6rem;
   }
 
   ul{
@@ -78,28 +111,6 @@
   }
   th {
     background-color: #918f8f;
-  }
-  
-  /* Headings */
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #eeeeee;
-    margin-bottom: 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #eeeeee;
-    margin-bottom: 0.8rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #eeeeee; /* Slightly darker gray */
-    margin-bottom: 0.6rem;
   }
   
   button {
@@ -136,87 +147,63 @@
     max-width: 80vh;
   }
 
-  /* Header Styles */
-header {
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  align-items: center; /* Ensures vertical alignment */
-  justify-content: center; /* Centers header content */
-  flex-wrap: wrap; /* Allows wrapping when necessary */
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-right: 20px; /* Adds some space between title and logo */
-}
-
-header img {
-  width: 16vh;
-  height: 10vh;
-  object-fit: contain; /* Ensure the image maintains aspect ratio */
-}
-
-/* General nav styling */
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  text-align: center;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center; /* Align items horizontally */
-  gap: 15px; /* Space between items */
-}
-
-nav ul li {
-  flex-shrink: 1;
-  flex-grow: 1;
-}
-
-nav a {
-  background-color: transparent;
-  border: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  font-size: 1.3rem;
-  cursor: pointer;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #eeeeee;
-  transition: color 0.3s, text-shadow 0.3s;
-}
-
-nav a:hover {
-  color: #fcfeff;
-  text-shadow: 0 0 3px #fcfeff;
-}
-  
-  /* Main Content Area */
-  main {
-    padding: 20px 0;
-    min-height: 100vh
-  }
-  
-  .banner {
-    color: #eeeeee;
-    padding: 20px;
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border-radius: 10px;
+    width: 100%;
+    height: 60px;
   }
-  
-  /* Main Content */
-  .main-content {
-    margin-top: 30px;
-    padding: 20px;
+
+  nav a {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #eeeeee;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+
+  nav a:hover {
+    color: #fcfeff;
+    text-shadow: 0 0 3px #fcfeff;
+  }
+
+  .offer-lane{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .offer-card{
+    margin-right: 10vh;
+    display: flex;
+    background-color: #808080;
+    padding: 3vh;
     border-radius: 10px;
+    box-shadow: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .offer-card:hover{
+    transform: scale(1.05);
+  }
+
+  .offer-card img{
+    width: 20vh;
+    height: 20vh;
+    margin-right: 2vh;
+  }
+
+  .offer-text div{
+    background-color: rgba(187, 4, 4, 0.616);
+    align-self: flex-end;
+    border-radius: 5px;
   }
 
   .map iframe{
@@ -231,13 +218,6 @@ nav a:hover {
 
   .form-area{
     margin-top: 30px;
-  }
-
-  footer {
-    color: #eeeeee;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
   }
 
   form {
@@ -304,23 +284,12 @@ nav a:hover {
     padding: 10px 0; /* Add padding for spacing */
   }
 
-  nav ul {
-    flex-direction: column; /* Stack the list items vertically */
-    align-items: center; /* Center the items horizontally */
-    width: 100%; /* Take up full width */
-  }
-
-  nav ul li {
-    margin-bottom: 10px; /* Add space between items vertically */
-    flex-grow: 0; /* Prevent items from growing too big */
-  }
-
   nav a {
     padding: 10px 20px; /* Increase padding for easier clicking */
     font-size: 1.3rem; /* Slightly adjust font size for smaller screens */
   }
 
-  .offer-grid {
+  .offer-lane {
     flex-direction: column; /* Stack cards vertically on smaller screens */
     align-items: center; /* Center the cards horizontally */
   }
@@ -339,7 +308,7 @@ nav a:hover {
 
   video {
     width: 90vw;
-    height: auto; /* Switch to 9:16 for mobile */
+    height: auto;
   }
 }
 
