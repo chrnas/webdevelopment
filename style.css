@@ -339,7 +339,7 @@ nav a:hover {
 
   video {
     width: 90vw;
-    height: calc(90vw * 16 / 9); /* Switch to 9:16 for mobile */
+    height: auto; /* Switch to 9:16 for mobile */
   }
 }
 
