@@ -50,7 +50,7 @@
           <h2>
             Kontakta oss gärna via mail om du har mediamaterial som skulle kunna bidra till vårt galleri
           </h2>
-          <form action="mailto:autofyll@gmail.com" method="post" enctype="text/plain">
+          <form method="post" enctype="text/plain">
             <label for="fname">Name:</label><br>
             <input type="text" id="fname" name="fname" value="Enter first name..."><br>
             <label for="lname">Last name:</label><br>
@@ -61,7 +61,7 @@
             <input type="text" id="message" name="message" value="Enter message..."><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" value="Enter your email..."><br>
-            <input type="submit" value="Submit">
+            <input onclick="generateEmailFromForm()" type="button" value="Submit">
           </form> 
         </div>
         <table>
@@ -89,5 +89,6 @@
         Tel: 013-10 44 10
       </address>
     </footer>
+    <script src="form-utility.js"></script>
   </body>
 </html>

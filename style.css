@@ -89,6 +89,18 @@
     margin-bottom: 0.6rem;
   }
 
+  a {
+    text-decoration: none;
+    color: #eeeeee;
+    color: #eeeeee;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+
+  a:hover {
+    color: #fcfeff;
+    text-shadow: 0 0 3px #fcfeff;
+  }
+
   ul{
     list-style: none;
   }
@@ -186,11 +198,13 @@
     padding: 3vh;
     border-radius: 10px;
     box-shadow: #333;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 
   .offer-card:hover{
     transform: scale(1.05);
+    color: #fcfeff;
+    text-shadow: 0 0 3px #fcfeff;
   }
 
   .offer-card img{
@@ -203,6 +217,16 @@
     background-color: rgba(187, 4, 4, 0.616);
     align-self: flex-end;
     border-radius: 5px;
+  }
+
+  .offer-card p{
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: fadeIn 1s ease-out forwards;
+    visibility: visible;
   }
 
   .map iframe{
@@ -246,7 +270,7 @@
       transition: background 0.3s;
   }
 
-  form input[type="submit"] {
+  form input[type="button"] {
     width: 100%;
     padding: 10px;
     background: #b1b1b1;
@@ -258,7 +282,7 @@
     transition: background 0.3s;
   }
 
-  form input[type="submit"]:hover {
+  form input[type="button"]:hover {
       background: #444;
   }
 
@@ -305,6 +329,10 @@
     height: auto; /* Adjust height according to aspect ratio */
   }
 
+  .offer-card p{
+    max-width: 10px
+  }
+
   video {
     width: 90vw;
     height: auto;
@@ -335,5 +363,14 @@
   h1, h2, h3 {
     font-weight: bold;
     color: black;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

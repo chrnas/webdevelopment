@@ -46,16 +46,16 @@
       </div>
       <div class="main-content">
         <div class="offer-lane">
-          <div class="offer-card">
+          <div onmouseover="expandLeftOfferCard()" onmouseleave="collapseLeftOfferCard()" class="offer-card">
             <img src="margarita.webp" alt="pizza, margarita">
-            <div class="offer-text">
+            <div id="left-offercard-description" class="offer-text">
               <h3>Margaritha</h3>
               <div class="offer-text">Rea 20%</div>
             </div>
           </div>
-          <div class="offer-card">
+          <div onmouseover="expandRightOfferCard()" onmouseleave="collapseRightOfferCard()" class="offer-card">
             <img src="vesuvio.webp" alt="pizza, vesuvio">
-            <div class="offer-text">
+            <div id="right-offercard-description" class="offer-text">
               <h3>Vesuvio</h3>
               <div class="offer-text">Rea 30%</div>
             </div>
@@ -71,5 +71,6 @@
         Tel: 013-10 44 10
       </address>
     </footer>
+    <script src="offer-card-utility.js"></script>
   </body>
 </html>

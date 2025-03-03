@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Christoffer Näs">
   </head>
-  <body>
+  <body onload="renderMenuList()">
     <header>
       <nav>
         <img class="logo" src="vallastadenpizzeria_logo.png" alt="logo">
@@ -49,24 +49,7 @@
           <button class="menu-button">Annat</button>
         </div>
         <input class="search-field" type="text" id="fname" name="fname" value="Sök...">
-        <ul>
-          <li class="menu-item">
-            <h3>Kebabpizza 120 kr</h3>
-            <p>Tomatsås, Ost, Kebabsås mild, Feferoni, Lök, Tomater(färska), Kebabkött</p>
-          </li>
-          <li class="menu-item">
-            <h3>Kebabpizza special 135 kr</h3>
-            <p>Tomatsås, Ost, Kebabsås mild, Feferoni, Lök, Tomater(färska), Kebabkött, pommes</p>
-          </li>
-          <li class="menu-item">
-            <h3>Kebabpizza med pommes 140 kr</h3>
-            <p>Tomatsås, Ost, Kebabsås mild, Feferoni, Lök, Tomater(färska), Kebabkött, pommes</p>
-          </li>
-          <li class="menu-item">
-            <h3>Viking kebab 135 kr</h3>
-            <p>(halvinbakad) Tomatsås, Ost, Kebabsås, Feferoni, Gurka, isbergssallad, Lök, Tomater(färska), Kebabkött</p>
-          </li>
-      </ul>
+        <ul id="item-list"></ul>
     </main>
     <footer>
       <address>
@@ -76,5 +59,6 @@
         Tel: 013-10 44 10
       </address>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
