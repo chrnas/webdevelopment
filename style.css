@@ -326,7 +326,7 @@
 
   .offer-card img {
     width: 40vw; /* Make the image more responsive */
-    height: auto; /* Adjust height according to aspect ratio */
+    height: 40vw; /* Adjust height according to aspect ratio */
   }
 
   .offer-card p{
