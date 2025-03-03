@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        #welcomeMessage {
+            display: none;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body onload="displayWelcomeMessage()">
+    <div id="welcomeMessage">
+        Welcome to My Website! We're glad you're here.
+    </div>
+
+    <script>
+        function displayWelcomeMessage() {
+            // Display the welcome message when the page loads
+            document.getElementById("welcomeMessage").innerHTML = "test"
+            document.getElementById("welcomeMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
