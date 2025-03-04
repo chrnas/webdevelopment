@@ -43,13 +43,14 @@
       </div>
       <div class="main-content">
         <div class="button-row">
-          <button class="menu-button">Pizzor</button>
-          <button class="menu-button">Sallader</button>
-          <button class="menu-button">Pastarätter</button>
-          <button class="menu-button">Annat</button>
+          <button class="menu-button" filter="pizza">Pizzor</button>
+          <button class="menu-button" filter="sallad">Sallader</button>
+          <button class="menu-button" filter="pasta">Pastarätter</button>
+          <button class="menu-button" filter="other">Annat</button>
         </div>
-        <input class="search-field" type="text" id="fname" name="fname" value="Sök...">
-        <ul id="item-list"></ul>
+        <input id="search-field" class="search-field" type="text" placeholder="Sök...">
+        <ul id="item-list">
+        </ul>
     </main>
     <footer>
       <address>
@@ -60,5 +61,8 @@
       </address>
     </footer>
     <script src="script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="menu-button-utility.js"></script>
+    <script src="menu-utility.js"></script>
   </body>
 </html>
