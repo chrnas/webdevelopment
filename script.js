@@ -38,39 +38,39 @@ function getMenuItems() {
         { "name": "Cacciatorav", "ingredients": "salami, lök", "category": "pizza" },
         { "name": "Pescatore", "ingredients": "tonfisk, räkor", "category": "pizza" },
 
-        { "name": "Vegetaria", "ingredients": "champinjoner, lök, paprika, ananas, kronärtskocka", "category": "special pizza" },
-        { "name": "Nino", "ingredients": "champinjoner, lök, köttfärssås, räkor", "category": "special pizza" },
-        { "name": "Long John", "ingredients": "skinka, tonfisk, räkor", "category": "special pizza" },
-        { "name": "Quattro Stagioni", "ingredients": "skinka, tonfisk, räkor, musslor, kronärtskocka", "category": "special pizza" },
-        { "name": "Kycklingpizza", "ingredients": "kyckling, ananas, curry, banan, lök", "category": "special pizza" },
-        { "name": "Grekisk special", "ingredients": "fetaost, feferoni, lök, oliver, tomater (färska)", "category": "special pizza" },
+        { "name": "Vegetaria", "ingredients": "champinjoner, lök, paprika, ananas, kronärtskocka", "category": "pizza" },
+        { "name": "Nino", "ingredients": "champinjoner, lök, köttfärssås, räkor", "category": "pizza" },
+        { "name": "Long John", "ingredients": "skinka, tonfisk, räkor", "category": "pizza" },
+        { "name": "Quattro Stagioni", "ingredients": "skinka, tonfisk, räkor, musslor, kronärtskocka", "category": "pizza" },
+        { "name": "Kycklingpizza", "ingredients": "kyckling, ananas, curry, banan, lök", "category": "pizza" },
+        { "name": "Grekisk special", "ingredients": "fetaost, feferoni, lök, oliver, tomater (färska)", "category": "pizza" },
 
-        { "name": "Kebabpizza", "ingredients": "tomatsås, ost, kebabsås mild, feferoni, lök, tomater (färska), kebabkött", "category": "kebab pizza" },
-        { "name": "Kebabpizza special", "ingredients": "tomatsås, ost, kebabsås mild, feferoni, isbergssallad, lök, tomater (färska), kebabkött", "category": "kebab pizza" },
-        { "name": "Kebabpizza med pommes", "ingredients": "tomatsås, ost, kebabsås mild, feferoni, lök, tomater (färska), kebabkött, pommes", "category": "kebab pizza" },
-        { "name": "Viking kebab", "ingredients": "tomatsås, ost, kebabsås, feferoni, gurka, isbergssallad, lök, tomater (färska), kebabkött (fläskkarré)", "category": "kebab pizza" },
+        { "name": "Kebabpizza", "ingredients": "tomatsås, ost, kebabsås mild, feferoni, lök, tomater (färska), kebabkött", "category": "pizza" },
+        { "name": "Kebabpizza special", "ingredients": "tomatsås, ost, kebabsås mild, feferoni, isbergssallad, lök, tomater (färska), kebabkött", "category": "pizza" },
+        { "name": "Kebabpizza med pommes", "ingredients": "tomatsås, ost, kebabsås mild, feferoni, lök, tomater (färska), kebabkött, pommes", "category": "pizza" },
+        { "name": "Viking kebab", "ingredients": "tomatsås, ost, kebabsås, feferoni, gurka, isbergssallad, lök, tomater (färska), kebabkött (fläskkarré)", "category": "pizza" },
 
-        { "name": "Acapulco", "ingredients": "tacosås, tacokryddmix, jalapeño, oxfilé, vitlök, champinjoner, lök", "category": "mexican pizza" },
-        { "name": "Mexicana special", "ingredients": "köttfärs, tacosås, jalapeño, kryddmix, lök, paprika", "category": "mexican pizza" },
-        { "name": "Azteka", "ingredients": "skinka, tacosås, jalapeño, kryddmix, kebabsås", "category": "mexican pizza" },
+        { "name": "Acapulco", "ingredients": "tacosås, tacokryddmix, jalapeño, oxfilé, vitlök, champinjoner, lök", "category": "pizza" },
+        { "name": "Mexicana special", "ingredients": "köttfärs, tacosås, jalapeño, kryddmix, lök, paprika", "category": "pizza" },
+        { "name": "Azteka", "ingredients": "skinka, tacosås, jalapeño, kryddmix, kebabsås", "category": "pizza" },
 
-        { "name": "Black&white", "ingredients": "oxfilé, fläskfilé, bearnaisesås", "category": "oxfile/flaskfile pizza" },
-        { "name": "De Chef", "ingredients": "oxfilé, champinjoner, bearnaisesås", "category": "oxfile/flaskfile pizza" },
-        { "name": "Tropicana", "ingredients": "skinka, räkor, banan, fläskfile", "category": "oxfile/flaskfile pizza" },
-        { "name": "Robban", "ingredients": "paprika, champinjoner, räkor, vitlök, oxfilé, bearnaisesås", "category": "oxfile/flaskfile pizza" },
+        { "name": "Black&white", "ingredients": "oxfilé, fläskfilé, bearnaisesås", "category": "pizza" },
+        { "name": "De Chef", "ingredients": "oxfilé, champinjoner, bearnaisesås", "category": "pizza" },
+        { "name": "Tropicana", "ingredients": "skinka, räkor, banan, fläskfile", "category": "pizza" },
+        { "name": "Robban", "ingredients": "paprika, champinjoner, räkor, vitlök, oxfilé, bearnaisesås", "category": "pizza" },
         { "name": "Studente", "ingredients": "oxfilé, ädelost, lök, purjolök, paprika", "category": "oxfile/flaskfile pizza" },
-        { "name": "Sandra", "ingredients": "purjolök, sparris, färska tomater, oxfilé, bearnaisesås", "category": "oxfile/flaskfile pizza" },
+        { "name": "Sandra", "ingredients": "purjolök, sparris, färska tomater, oxfilé, bearnaisesås", "category": "pizza" },
 
-        { "name": "Pizza Parma", "ingredients": "parmaskinka, olivolja, mozzarellaost, ruccolasallad, vitlök (färsk), soltorkade tomater", "category": "lyx pizza" },
-        { "name": "Pizza Spenat", "ingredients": "bladspenat, olivolja, färska champinjoner, färska vitlök, fetaost", "category": "lyx pizza" },
-        { "name": "Mozzarella", "ingredients": "champinjoner (färska), olivolja, mozzarellaost, bladspenat, körsbärstomater, vitlök (färsk)", "category": "lyx pizza" },
+        { "name": "Pizza Parma", "ingredients": "parmaskinka, olivolja, mozzarellaost, ruccolasallad, vitlök (färsk), soltorkade tomater", "category": "pizza" },
+        { "name": "Pizza Spenat", "ingredients": "bladspenat, olivolja, färska champinjoner, färska vitlök, fetaost", "category": "pizza" },
+        { "name": "Mozzarella", "ingredients": "champinjoner (färska), olivolja, mozzarellaost, bladspenat, körsbärstomater, vitlök (färsk)", "category": "pizza" },
         { "name": "Daniella", "ingredients": "gorgonzola, körsbärstomater, ädelost, mozzarellaost, fetaost", "category": "lyx pizza" },
 
-        { "name": "Vegan Kebabpizza", "ingredients": "veganost, vegankebab, färska tomater, feferoni, sås, lök", "category": "vegan pizza" },
-        { "name": "Vegan Kebabpizza Special", "ingredients": "veganost, vegankebab, färska tomater, feferoni, sås, lök, isbergssallad, gurka", "category": "vegan pizza" },
-        { "name": "Vegan Paesana", "ingredients": "cheezly (mozzarella), fejkon (bacon), champinjoner (färska), lök, vitlök (färsk)", "category": "vegan pizza" },
-        { "name": "Vegan Salami", "ingredients": "cheezly (mozzarella), champinjoner (färska), lök, vitlök (färsk), pepperoni (salami)", "category": "vegan pizza" },
-        { "name": "Celine", "ingredients": "zucchini, aubergine (grillad), tomater (soltorkade), mozzarellaost, paprika, ruccola", "category": "vegan pizza" },
+        { "name": "Vegan Kebabpizza", "ingredients": "veganost, vegankebab, färska tomater, feferoni, sås, lök", "category": "pizza" },
+        { "name": "Vegan Kebabpizza Special", "ingredients": "veganost, vegankebab, färska tomater, feferoni, sås, lök, isbergssallad, gurka", "category": "pizza" },
+        { "name": "Vegan Paesana", "ingredients": "cheezly (mozzarella), fejkon (bacon), champinjoner (färska), lök, vitlök (färsk)", "category": "pizza" },
+        { "name": "Vegan Salami", "ingredients": "cheezly (mozzarella), champinjoner (färska), lök, vitlök (färsk), pepperoni (salami)", "category": "pizza" },
+        { "name": "Celine", "ingredients": "zucchini, aubergine (grillad), tomater (soltorkade), mozzarellaost, paprika, ruccola", "category": "pizza" },
 
         { "name": "Kebabsallad", "ingredients": "kebabkött, isbergssallad, tomat, gurka, lök, paprika, pepperoni, majs, morot, rucola, kebabsås", "category": "salad" },
         { "name": "Kycklingsallad", "ingredients": "kyckling, isbergssallad, tomat, gurka, lök, paprika, ananas, majs, morot, rucola, rhode islandsås", "category": "salad" },
@@ -82,7 +82,7 @@ function getMenuItems() {
         { "name": "Pasta med Carbonara", "ingredients": "", "category": "pasta" },
         { "name": "Schnitzel med Pommes", "ingredients": "", "category": "other" },
 
-        { "name": "Lasagne", "ingredients": "", "category": "a la carte" }
+        { "name": "Lasagne", "ingredients": "", "category": "pasta" }
     ];
     return menuItems;
 }
