@@ -203,8 +203,6 @@
 
   .offer-card:hover{
     transform: scale(1.05);
-    color: #fcfeff;
-    text-shadow: 0 0 3px #fcfeff;
   }
 
   .offer-card img{
